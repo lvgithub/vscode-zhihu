@@ -94,7 +94,7 @@ export class PublishService {
 		// get rid of shebang line
 		if (url) text = text.slice(text.indexOf('\n') + 1);
 
-		text = text + "\n\n>本文首发于 ** [港美股那些事](https://www.yuque.com/ximenchuiniu-s6hwf/666888) **";
+		text = text + "\n\n>本文首发于 [港美股那些事](https://www.yuque.com/ximenchuiniu-s6hwf/666888)";
 		// let html = this.zhihuMdParser.render(text);
 		let tokens = this.zhihuMdParser.parse(text, {});
 		// convert local and outer link to zhihu link
